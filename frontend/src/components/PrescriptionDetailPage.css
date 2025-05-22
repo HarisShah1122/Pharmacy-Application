@@ -1,0 +1,160 @@
+
+section.prescriptionDetail {
+    padding: 40px 20px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+  }
+ 
+  .prescriptionDetail .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+ 
+  .prescriptionDetail .prescriptionDetail_inner {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+ 
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  .prescriptionDetail_inner .prescriptionDetail_title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a3c5e;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .prescriptionDetail_title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: #3498db;
+    border-radius: 2px;
+  }
+
+  .prescriptionDetail_inner .prescriptionDetail_card {
+    background: #f9fbfd;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e0e7ed;
+  }
+
+  .prescriptionDetail_card .prescriptionDetail_section {
+    margin-bottom: 25px;
+  }
+ 
+  .prescriptionDetail_section .prescriptionDetail_subtitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 5px;
+  }
+  
+ 
+  .prescriptionDetail_section p {
+    font-size: 1rem;
+    color: #34495e;
+    margin: 8px 0;
+    line-height: 1.6;
+  }
+  
+  .prescriptionDetail_section p strong {
+    color: #1a3c5e;
+    font-weight: 600;
+  }
+  
+  .prescriptionDetail_section .prescriptionDetail_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .prescriptionDetail_list li {
+    font-size: 1rem;
+    color: #34495e;
+    padding: 10px;
+    background: #ffffff;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .prescriptionDetail_list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+ 
+  .prescriptionDetail_inner .prescriptionDetail_loading {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .prescriptionDetail_loading p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-top: 15px;
+  }
+  
+  .prescriptionDetail_loading .spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border-width: 0.4em;
+    color: #3498db;
+  }
+ 
+  .prescriptionDetail_inner .prescriptionDetail_error {
+    font-size: 1.1rem;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f8d7da;
+    color: #721c24;
+    animation: slideIn 0.3s ease-in-out;
+  }
+  
+  .prescriptionDetail_error strong {
+    color: #721c24;
+  }
+  
+  .prescriptionDetail_inner .prescriptionDetail_warning {
+    font-size: 1.1rem;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff3cd;
+    color: #856404;
+    animation: slideIn 0.3s ease-in-out;
+  }
+  
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
